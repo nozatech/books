@@ -1,10 +1,29 @@
 #!/bin/bash
 
+
 echo "Checking if there is any changes...."
-git status
+git status  > gitStatusLog.tmp
+
+### gitStatusLog.tmp's output will be:
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+# nothing to commit, working directory clean
+###
+
+match="nothing to commit"
+while read -r line
+do
+	if [[ $match =~ "nothing to commit" ]]
+	then break;
+	fi
+done < gitStatusLog.tmp
+
+
 sleep 3
 echo
 echo
+
+
 
 echo "Newly changed files are adding to the stage...."
 git add .
