@@ -42,3 +42,6 @@ echo
 
 echo "All files are uploaded to Gibhub." 
 echo "Check your new files on the Gibhub."
+
+
+rm -f 	gitStatusLog.tmp
