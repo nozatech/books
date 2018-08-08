@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Checking if there is any changes...."
+echo ">>> Checking if there is any changes....<<<"
 git status  | tee gitStatusLog.tmp
 
 ### gitStatusLog.tmp's output will be:
@@ -19,28 +19,29 @@ done < gitStatusLog.tmp
 
 
 sleep 3
-echo
-echo
+echo	#space
+echo	#space
 
 
 
-echo "Newly changed files are adding to the stage...."
+echo ">>>Newly changed files are adding to the stage....<<<"
 git add .
 echo 
 echo
 
-echo "Committing to Stage...."
+echo ">>>Committing to Stage....<<<"
 git commit -m "update"
 echo
 echo
 
-echo "Uploading to Github...."
+echo ">>>Uploading to Github....<<<"
 git push
 echo 
 echo
 
-echo "All files are uploaded to Gibhub." 
-echo "Check your new files on the Gibhub."
+echo ">>>All files are uploaded to Gibhub.<<<" 
+echo ">>>Check your new files on the Gibhub.<<<"
 
 
 rm -f 	gitStatusLog.tmp
+echo ">>>The Temp file has been REMOVED<<<"
