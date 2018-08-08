@@ -1,8 +1,7 @@
 #!/bin/bash
 
-
 echo "Checking if there is any changes...."
-git status  > gitStatusLog.tmp
+git status  | tee gitStatusLog.tmp
 
 ### gitStatusLog.tmp's output will be:
 # On branch master
