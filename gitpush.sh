@@ -1,6 +1,7 @@
 #!/bin/bash
 
-echo ">>> Checking if there is any changes....<<<"
+echo -e "\e[1;42m >>> Checking if there is any changes....<<< \e[0m"
+# echo -e "\e[1;42m This is green background! \e[0m"
 git status  | tee gitStatusLog.tmp
 
 ### gitStatusLog.tmp's output will be:
