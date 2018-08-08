@@ -25,24 +25,27 @@ echo	#space
 
 
 
-echo ">>>Newly changed files are adding to the stage....<<<"
+
+echo -e "\e[1;42m >>>Newly changed files are adding to the stage....<<< \e[0m"
 git add .
 echo 
 echo
 
-echo ">>>Committing to Stage....<<<"
+echo  -e "\e[1;42m >>>Committing to Stage....<<< \e[0m"
+
+
 git commit -m "update"
 echo
 echo
 
-echo ">>>Uploading to Github....<<<"
+echo  -e "\e[1;42m >>>Uploading to Github....<<< \e[0m"
 git push
 echo 
 echo
 
-echo ">>>All files are uploaded to Gibhub.<<<" 
-echo ">>>Check your new files on the Gibhub.<<<"
+echo  -e "\e[1;42m >>>All files are uploaded to Gibhub.<<< \e[0m"
+echo  -e "\e[1;42m >>>Check your new files on the Gibhub.<<< \e[0m"
 
 
 rm -f 	gitStatusLog.tmp
-echo ">>>The Temp file has been REMOVED<<<"
+echo -e "\e[1;42m >>>The Temp file has been REMOVED<<< \e[0m"
