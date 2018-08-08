@@ -14,7 +14,8 @@ match="nothing to commit"
 while read -r line
 do
 	if [[ $match =~ "nothing to commit" ]]
-	then break;
+	then echo "No need to update"
+	break;
 	fi
 done < gitStatusLog.tmp
 
@@ -45,7 +46,7 @@ echo
 
 echo  -e "\e[1;42m >>>All files are uploaded to Gibhub.<<< \e[0m"
 echo  -e "\e[1;42m >>>Check your new files on the Gibhub.<<< \e[0m"
-
+echo
 
 rm -f 	gitStatusLog.tmp
 echo -e "\e[1;42m >>>The Temp file has been REMOVED<<< \e[0m"
