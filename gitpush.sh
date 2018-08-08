@@ -24,16 +24,12 @@ sleep 3
 echo	#space
 echo	#space
 
-
-
-
 echo -e "\e[1;42m >>>Newly changed files are adding to the stage....<<< \e[0m"
 git add .
 echo 
 echo
 
 echo  -e "\e[1;42m >>>Committing to Stage....<<< \e[0m"
-
 
 git commit -m "update"
 echo
