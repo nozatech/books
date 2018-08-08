@@ -2,7 +2,7 @@
 
 echo -e "\e[1;42m >>> Checking if there is any changes....<<< \e[0m"
 # echo -e "\e[1;42m This is green background! \e[0m"
-git status  | tee gitStatusLog.tmp
+git status  | tee ../gitStatusLog.tmp
 
 ### gitStatusLog.tmp's output will be:
 # On branch master
@@ -17,7 +17,7 @@ do
 	then echo "No need to update"
 	break;
 	fi
-done < gitStatusLog.tmp
+done < ../gitStatusLog.tmp
 
 
 sleep 3
@@ -44,5 +44,5 @@ echo  -e "\e[1;42m >>>All files are uploaded to Gibhub.<<< \e[0m"
 echo  -e "\e[1;42m >>>Check your new files on the Gibhub.<<< \e[0m"
 echo
 
-rm -f 	gitStatusLog.tmp
+rm -f 	../gitStatusLog.tmp
 echo -e "\e[1;42m >>>The Temp file has been REMOVED<<< \e[0m"
