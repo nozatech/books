@@ -1,0 +1,252 @@
+7 Network Engineer Interview Questions and Answers
+Whether you are preparing to interview a candidate or applying for a job, 
+review our list of top Network Engineer interview questions and answers.
+
+
+1. What resources do you use to stay on top of innovations in the industry?
+
+The technology industry is fast-paced, and new network solutions could significantly 
+improve your infrastructure. The network engineer should have the initiative to 
+continually learn about the latest and greatest technology. You're not looking for 
+any particular resource in the applicant's answer, simply that they do stay on top 
+of things. What to look for:
+
+Dedication to learning
+Reasons for choosing the resources
+Ability to stay on top of trends
+
+Example: "I participate in a local network engineer Meetup group, read Network World and 
+use an RSS reader to consolidate several news sources that frequently cover network innovations. "
+
+
+2. Have you coordinated with development teams and other stakeholders while deploying network resources?
+
+Cross-collaboration between teams and departments is a common trend in the business world. 
+The available network resources can significantly impact an organization's software development 
+and other projects. The applicant should provide an answer that makes you feel confident in 
+their ability to communicate and work with multiple people. What to look for:
+
+Strong communication skills
+Ability to coordinate
+Experience working with other teams
+
+Example: "I have five years of experience working in a DevOps team. I worked hand in hand with 
+the developers to ensure that they have access to a network that supported what their 
+applications needed to perform.
+
+
+3. What safeguards do you put in a network design to limit data loss?
+
+Data loss can cause systems to stop and productivity to grind to a halt. This risk is a 
+common one that the network engineer should be prepared for. Look for an answer that goes 
+into detail on the type of safeguards they use and why they have selected them. What to look for:
+
+Selection process
+Understanding of data loss risk
+Experience with this situation
+Example: "I build disaster recovery resources into the network plan and focus on high availability. 
+Company data is safeguarded in several ways, such as regularly scheduled backups and distributed 
+network storage locations."
+
+
+4. Can you draw a network topography you worked on before and explain the design to me?
+
+One of the primary duties of a network engineer is creating the network blueprints for your 
+organization. The applicant should be able to quickly sketch out a diagram and explain their 
+decision-making process behind that topography. What to look for:
+
+Well-illustrated design
+Easy to understand explanation
+Solid network design
+Example: "This network topography is what I implemented at a mid-size financial organization. 
+I needed to keep security and availability at the forefront of the design, which is why I 
+used this particular configuration to serve their needs."
+
+
+5. What is the largest size network you have engineered?
+
+This question allows you to gauge whether the applicant has hands-on experience with networks 
+sized similarly to yours. They don't necessarily have to be in the same industry or use 
+identical technology to your organization. You're looking for a general familiarity with 
+the challenges and requirements that come with a company of your size. What to look for:
+
+Lots of details
+Similar sized network
+Hands-on experience
+Example: "I created and implemented networks for small business clients that ranged from a 
+two-person operation to 200 people. These networks supported single locations and used a mix 
+of on-premises solutions and cloud-based applications."
+
+
+6. Can you walk me through your troubleshooting process when you aren't getting the expected 
+performance out of your network configuration?
+
+This question gives you a first-hand look at the way the applicant approaches a complex problem. 
+There are countless ways to approach this issue, and it's valuable to see how the applicant goes 
+about it. What to look for:
+
+Analytical thinking
+Solid process
+Willingness to ask for help
+Example: "The first thing I do is eliminate any low-hanging fruit. I'll check for network outages, 
+hardware failures, high network activity and other common causes of poor performance. Once I've 
+ruled those out, I'll use network monitoring and analytics tools to get more information about 
+the cause of the problem. I'll also reach out to network administrators and technicians to speed 
+up the process if I run into problems."
+
+
+7. How have you scaled networks to accommodate an organization's changing needs?
+
+It's expensive to recruit talented network engineers, so you want someone who is suitable for 
+the long term. As your organization grows and adapts to changes in the business world, 
+your network should be capable of keeping up with new needs. Look for an answer that 
+displays familiarity with various scaling methods. What to look for:
+
+Understanding of scaling methods
+Experience with network scaling
+Willingness to learn new scaling methods
+Example: "I worked with a startup company selling a product that went from 0 to 15,000 
+users in the first year. I started with a small-scale on-premises network capable of 
+supporting the basic operations of the company to get them started. As we onboarded users, 
+I integrated our on-premises resources with ACME Web Services so we could handle traffic 
+spikes from successful marketing campaigns."
+
+
+8. How many bits do you need for a subnet size.
+	The minimum addresses needed is 2 bits for 4 addresses 2^(# of addresses) = 2^2 which used 
+	for point to point links. Max addresses can go as much as class A IP address /8 so for maximum 
+	bits is 32-8 = 24 bit
+
+9. Describe the process of making a TCP connection from a browser to a server through routers, switches, and a load balancer
+	Client Browser -> lookup local hostfile -> Local DNS -> query IPS DNS using PC to Gateway (ISP)-> 
+	ISP DSN Answer Remote Server IP -> Server's ISP Router -> Server's Firewall -> LB ->
+	3way Handshack to remote Server IP address -> Connection established
+	
+
+
+
+#################################################
+# Terminology
+#################################################
+3-way handshake (SYN,SYN-ACK,ACK)
+	The 3 way handshake is a feature of TCP, which provides a service consisting of a serial two-way 
+	data stream on top of the packet-oriented IP protocol. ... UDP does not implement 3 way handshake. 
+	TCP does it to establish a session between the 2 peers.
+	--------------------------------------------------
+	Host A	<----> Host B
+	--------------------------------------------------
+	Host A sends a TCP SYNchronize packet to Host B
+	Host B receives A's SYN request
+	Host B sends a SYNchronize-ACKnowledgement
+	Host A receives B's SYN-ACK
+	Host A sends ACKnowledge
+	Host B receives ACK. 
+	TCP socket connection is ESTABLISHED.
+	--------------------------------------------------
+
+Spanning-Tree Protocol	<- Protocol used in L2 networks to prevent broadcast storms that helps ensure 
+							a loop free topology when multiple links are present between switches.
+OSPF 	<- is link-state and distance-vector : link-state for intra-area computations and 
+			distance-vector for inter-area/external route computations. For external area 
+			route choosing, OSPF asks the ABR/ASBR on what is their view to the destination , 
+			taking for granted what the router reports in.
+		<- Open Shortest Path First. It is a protocol that allows routers to set routes between them. 
+			As links go up and down, OSPF allows the routers to change routes so that the route taken 
+			always is the shortest possible.
+
+802.1af <- is an amendment to IEEE std 802.1X to establish security associations for 802.1ae MAC 
+			Security, and provide media access method independent association discovery. It will 
+			facilitate secure communication over publicly accessible LAN/MAN media for which security 
+			has not otherwise been defined.
+
+
+Wireshark	<- packet capture and review
+
+
+ICMP 	<=  (Internet Control Message Protocol)is actually at the "top" of the layer 3. It uses the 
+			IP protocol to deliver data to a remote host. In other words, ICMP messages must be 
+			encapsulated in IP packets.
+			
+			
+
+BGP 	<=(Border Gateway Protocol) is protocol that manages how packets are routed across the internet 
+			through the exchange of routing and reachability information between edge routers. 
+		BGP offers network stability that guarantees routers can quickly adapt to send packets 
+		through another reconnection if one internet path goes down. 
+
+RFC 	<- Remote Function Call
+IETF 	<- Internet Engineering Task Force
+
+STP		<- Spanning-Tree is a network protocol that builds a loop-free logical topology for 
+			Ethernet networks. 
+		  The basic function of STP is to prevent bridge loops and the broadcast radiation 
+		  that results from them.
+
+UDP 	<- User Datagram Protocol 
+TCP/IP	<- transmission control protocol/Internet protocol
+
+Wi-Fi 1 would have been 802.11b, released in 1999.
+Wi-Fi 2 would have been 802.11a, also released in 1999.
+Wi-Fi 3 would have been 802.11g, released in 2003.
+Wi-Fi 4 is 802.11n, released in 2009.
+Wi-Fi 5 is 802.11ac, released in 2014.
+Wi-Fi 6	<- 802.11ax
+
+mtr		<- it investigates the network connection between the host mtr runs  on
+       and  HOSTNAME.   by  sending  packets with purposely low TTLs. It continues to send
+       packets with low TTL, noting the response time of the  intervening  routers.   This
+       allows  mtr  to  print  the  response percentage and response times of the internet
+       route to HOSTNAME.  A sudden increase in packet loss or response time is  often  an
+       indication of a bad (or simply overloaded) link.
+
+       The  results  are  usually reported as round-trip-response times in miliseconds and
+       the percentage of packetloss.
+
+
+
+
+OSI Layers model
+Layer	Protocol data unit (PDU)	Function[3]
+# Host layers #	
+7	Application	Data	-High-level APIs, including resource sharing, remote file access
+6	Presentation		-Translation of data between a networking service and an application; 
+							including character encoding, data compression and encryption/decryption
+5	Session				-Managing communication sessions, i.e. continuous exchange of information in 
+							the form of multiple back-and-forth transmissions between two nodes
+4	Transport			-Segment, Datagram	Reliable transmission of data segments between points on 
+							a network, including segmentation, acknowledgement and multiplexing
+# Media layers #
+3	Network				-Packet	Structuring and managing a multi-node network, including addressing, 
+							routing and traffic control
+2	Data link			-Frame	Reliable transmission of data frames between two nodes connected by 
+							a physical layer
+1	Physical			-Symbol	Transmission and reception of raw bit streams over a physical medium
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
